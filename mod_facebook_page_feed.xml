@@ -25,12 +25,20 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					name="id"
+					name="pageid"
 					type="text"
 					default=""
 					size="10"
-					label="ID"
-					description="Define the ID" >
+					label="Page Id"
+					description="Define the Page ID" >
+					</field>
+				<field
+					name="accesstoken"
+					type="text"
+					default=""
+					size="50"
+					label="Access Token"
+					description="Access Token" >
 					</field>
 					
 

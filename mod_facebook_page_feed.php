@@ -1,8 +1,13 @@
 <?php
+error_reporting(E_ALL);
+ini_set( 'display_errors','1');
 
 include('helper.php');
-//Param eg
-$id = $params->get('id');
+$pageid = $params->get('pageid');
+$accesstoken = $params->get('accesstoken');
+
+$facebookfeed = new facebookFeed( $pageid, $accesstoken );
+$feed = $facebookfeed -> getFeed();
 
 
 //Layout eg
