@@ -1,0 +1,3 @@
+# Super Simple Facebook Feed Joomla! Module
+
+Just what is says on the tin...
