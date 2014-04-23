@@ -43,7 +43,7 @@
 				<field
 					name="feedlimit"
 					type="text"
-					default=""
+					default="All"
 					size="50"
 					label="Feed Limit"
 					description="Limit the number of facebook items to display" >

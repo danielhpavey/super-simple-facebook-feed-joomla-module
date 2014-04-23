@@ -1,6 +1,8 @@
 <?php
 defined( '_JEXEC' ) or die;
 
+$counter = 0;
+
 foreach ($feed->data as $post ){
 
 	if (isset ($post->message) || isset($post->picture)){
@@ -15,6 +17,15 @@ foreach ($feed->data as $post ){
 	echo '<hr />';
 	echo '</div>';
 	}
+
+	if ( $params -> get ( 'feedlimit' ) != 'All'){
+
+		if ( $params -> get ( 'feedlimit' ) == $counter ){
+	break;
+	}
+	}
+
+	$counter ++;
 
 }
 
