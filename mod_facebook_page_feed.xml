@@ -40,6 +40,14 @@
 					label="Access Token"
 					description="Access Token" >
 					</field>
+				<field
+					name="feedlimit"
+					type="text"
+					default=""
+					size="50"
+					label="Feed Limit"
+					description="Limit the number of facebook items to display" >
+					</field>
 					
 
 			</fieldset>
