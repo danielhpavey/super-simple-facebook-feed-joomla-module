@@ -12,7 +12,11 @@ foreach ($feed->data as $post ){
 	echo isset( $post->message ) ? $post->message: '';
 	echo '<span style = "display:block; clear:both"></span>';
 	echo '<br />';
-	echo isset ($post->link)? '<a href = "' . $post->link . '" target="_blank">View on Facebook</a>' :'';
+	if ($post->type == 'link'){
+		echo isset ($post->link)? '<a href = "' . $post->link . '" target="_blank">View More</a>' :'';
+	} else {
+		echo isset ($post->link)? '<a href = "' . $post->link . '" target="_blank">View on Facebook</a>' :'';
+	}
 	echo '</p>';
 	echo '<hr />';
 	echo '</div>';
